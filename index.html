@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pop-up" style="display: none;">
+        <form action="" method="get" id="theform">
+            <legend>New Book</legend>
+            <div id="textbox">
+                <p>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" placeholder="Author">
+                </p>
+                <p>
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title" name="title" placeholder="Title">
+                </p>
+                <p>
+                    <label for="number-pages">Number of Pages</label>
+                    <input type="number" id="pages" name="pages" placeholder="Number of Pages">
+                </p>
+            </div>
+            <p>Have you read this book? </br>
+                <label for="yes">yes</label>
+                <input type="radio" id="yes" name="read" value="yes">
+                <label for="no">no</label>
+                <input type="radio" id="no" name="read" value="no">
+            </p>
+            <button id="add" type="submit">Add Book</button>
+        </form>
+    </div>
+    <button id="new-book">New Book</button>
+    <div class ="book-container"></div>
+</body>
+</html>
