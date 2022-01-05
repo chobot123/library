@@ -9,28 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="pop-up" style="display: none;">
+    <div id="pop-up" style="display: none">
         <form action="" method="get" id="theform">
             <legend>New Book</legend>
             <div id="textbox">
                 <p>
-                    <label for="author">Author</label>
+                    <label id="text" for="author">Author</label>
                     <input type="text" id="author" name="author" placeholder="Author">
                 </p>
                 <p>
-                    <label for="title">Book Title</label>
-                    <input type="text" id="title" name="title" placeholder="Title">
+                    <label id="text" for="title">Book Title</label>
+                    <input type="text" id="title" name="title" placeholder="Title" required>
                 </p>
                 <p>
-                    <label for="number-pages">Number of Pages</label>
+                    <label id="text" for="number-pages">Number of Pages</label>
                     <input type="number" id="pages" name="pages" placeholder="Number of Pages">
                 </p>
             </div>
             <p>Have you read this book? </br>
                 <label for="yes">yes</label>
-                <input type="radio" id="yes" name="read" value="yes">
+                <input type="radio" id="yes" name="read" value="yes" required>
                 <label for="no">no</label>
-                <input type="radio" id="no" name="read" value="no">
+                <input type="radio" id="no" name="read" value="no" required>
             </p>
             <button id="add" type="submit">Add Book</button>
         </form>
