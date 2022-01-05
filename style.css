@@ -1,16 +1,99 @@
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-size: 62px;
+  text-align: center;
+  padding: 50px;
+  background-color: darkslategray;
+  color: white;
+  max-height: 200px;
+  min-width: 100vh;
+}
+
+.btnContainer {
+  flex: 1;
+  max-width: 250px;
+  min-width: 250px;
+  background-color: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookBtnContainer {
+  flex: 1;
+  display: flex;
+  background-color:rgb(51, 69, 73);
+}
+
+.book-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.card{
+  margin: 30px;
+  padding: 15px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 24px;
+}
+
+.textAndRead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.switchContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 15px;
+  gap: 10px;
+}
+
+#exit {
+  align-self: flex-start;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
 #text {
     display: inline-block;
     width: 100px;
 }
 
-.book-container {
-    display: flex;
-    gap: 10px;
-    
+#theform {
+  text-align: center;
+  color: white;
+  font-size: 24px;
 }
 
-.card {
-    display: flex;
+#add, #new-book {
+  padding: 32px;
+  font-size: 24px;
+  border-radius: 24px;
+  background-color: darkslategray;
+  color: white;
 }
 
  /* The switch - the box around the slider */
@@ -18,7 +101,7 @@
     position: relative;
     display: inline-block;
     width: 60px;
-    height: 34px;
+    height: 45px;
   }
   
   /* Hide default HTML checkbox */
@@ -30,48 +113,57 @@
   
   /* The slider */
   .slider {
-    position: absolute;
+    display: flex;
+    position: relative;
     cursor: pointer;
-    top: 0;
+    /*top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
     background-color: #ccc;
+    color: white;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   .slider:before {
-    position: absolute;
+    display: flex;
+    position: relative;
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
-    bottom: 4px;
+    left: 1px;
+    /*bottom: 4px;
+    -webkit-transition: .4s;*/
     background-color: white;
-    -webkit-transition: .4s;
+    color: white;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background: linear-gradient(135deg, rgba(24, 77, 104, 0.8) 0%, rgba(87, 202, 133, 0.8) 100%);
+    color: white;
   }
   
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
+    color: white;
   }
   
   input:checked + .slider:before {
+    /*
     -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
+    -ms-transform: translateX(26px);*/
     transform: translateX(26px);
   }
   
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
+    border: white solid;
   }
   
   .slider.round:before {
     border-radius: 50%;
   } 
+  
